@@ -1,6 +1,6 @@
 # Restormer-SWT: Hierarchical MRI Denoising via Stationary Wavelet Transform and Restormer
 
-A lightweight (0.83M parameters) MRI denoising model that combines **Stationary Wavelet Transform (SWT)** decomposition with a **Restormer**-based hierarchical architecture for effective noise removal in MR images.
+A lightweight (0.83M parameters) MRI denoising model that combines **Stationary Wavelet Transform (SWT)** decomposition with a **Restormer**-based hierarchical architecture for effective noise removal in MRI images.
 
 ## Architecture
 
@@ -112,18 +112,3 @@ python evaluate.py
 ```
 
 Computes PSNR, SSIM, LPIPS, and FID on the test set using the best checkpoint.
-
-## Citation
-
-If you use this code, please cite our paper:
-
-```bibtex
-@article{restormer_swt_2025,
-  title={Restormer-SWT: Hierarchical MRI Denoising via Stationary Wavelet Transform},
-  year={2025}
-}
-```
-
-## License
-
-This project is released under the MIT License.
