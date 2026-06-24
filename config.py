@@ -1,5 +1,5 @@
 """
-Restormer-SWT Configuration
+PraFormer Configuration
 All hyperparameters used in the paper.
 """
 import os

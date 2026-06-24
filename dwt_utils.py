@@ -104,3 +104,4 @@ class SWTProcessor(nn.Module):
         return self._iswt_single(
             destd['LL'], destd['LH'], destd['HL'], destd['HH']
         )
+

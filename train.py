@@ -1,5 +1,5 @@
 """
-Restormer-SWT Training Script
+PraFormer Training Script
 Train the HierarchicalRestormer model on paired MRI data.
 
 Usage:
@@ -76,7 +76,7 @@ def save_epoch_vis(model, val_loader, epoch, vis_dir, n=4):
 # ── Training ──────────────────────────────────────────────────────────────────
 def main():
     print("=" * 70)
-    print("  Restormer-SWT Training")
+    print("  PraFormer Training")
     print(f"  Data:   {Config.DATA_ROOT}")
     print(f"  Output: {Config.OUTPUT_ROOT}")
     print("=" * 70, flush=True)

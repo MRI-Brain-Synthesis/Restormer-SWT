@@ -47,3 +47,4 @@ class MRIDataset(Dataset):
             target_norm = target_norm[np.newaxis, ...]
 
         return torch.from_numpy(input_norm), torch.from_numpy(target_norm), torch.tensor(scale, dtype=torch.float32)
+

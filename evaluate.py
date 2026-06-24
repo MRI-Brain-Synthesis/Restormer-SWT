@@ -1,5 +1,5 @@
 """
-Restormer-SWT Evaluation Script
+PraFormer Evaluation Script
 Evaluate the trained model on the test set with PSNR, SSIM, LPIPS, and FID.
 
 Usage:
@@ -87,7 +87,7 @@ def main():
     os.makedirs(eval_dir, exist_ok=True)
 
     print("=" * 70)
-    print("  Restormer-SWT Evaluation")
+    print("  PraFormer Evaluation")
     print(f"  Checkpoint: {ckpt_path}")
     print("=" * 70, flush=True)
 
@@ -120,7 +120,7 @@ def main():
 
     # Save results
     with open(os.path.join(eval_dir, "summary.txt"), "w") as f:
-        f.write(f"Restormer-SWT -- Test Evaluation\n{'='*60}\n")
+        f.write(f"PraFormer -- Test Evaluation\n{'='*60}\n")
         f.write(f"Best epoch: {best_epoch}  |  Params: {n_params/1e6:.2f}M\n\n")
         f.write(f"Samples: {results['n_samples']}\n\n")
         f.write(f"{'Metric':<24} {'Input':>20} {'Output':>20}\n{'-'*64}\n")

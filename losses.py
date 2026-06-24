@@ -85,3 +85,4 @@ class AdaptiveBandLoss(nn.Module):
         sum_inv     = sum(inv_losses.values())
         for k in self.weights:
             self.weights[k] = inv_losses[k] / sum_inv
+

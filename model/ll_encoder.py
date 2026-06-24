@@ -58,3 +58,4 @@ class LLEncoder(nn.Module):
 
         fused = self.fuse(torch.cat([cnn_feat, grad_feat], dim=1))
         return fused
+

@@ -63,3 +63,4 @@ class HierarchicalRestormer(nn.Module):
         if return_bands:
             return output, restored_bands, norm_bands
         return output
+

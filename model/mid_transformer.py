@@ -20,3 +20,4 @@ class MidFrequencyTransformer(nn.Module):
 
         lh_restored, hl_restored = torch.chunk(x, 2, dim=1)
         return lh_restored, hl_restored
+

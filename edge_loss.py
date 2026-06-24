@@ -67,3 +67,4 @@ class SobelEdgeLoss(nn.Module):
             return spatial_loss + self.fft_weight * hf_loss.to(spatial_loss.dtype)
 
         return spatial_loss
+

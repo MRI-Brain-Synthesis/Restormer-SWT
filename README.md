@@ -1,10 +1,10 @@
-# Restormer-SWT: Hierarchical MRI Denoising via Stationary Wavelet Transform and Restormer
+# PraFormer: Hierarchical MRI Denoising via Stationary Wavelet Transform and Restormer
 
 A lightweight (0.83M parameters) MRI denoising model that combines **Stationary Wavelet Transform (SWT)** decomposition with a **Restormer**-based hierarchical architecture for effective noise removal in MRI images.
 
 ## Architecture
 
-Restormer-SWT decomposes each input slice into four SWT sub-bands (LL, LH, HL, HH) and processes them with specialised sub-networks:
+PraFormer decomposes each input slice into four SWT sub-bands (LL, LH, HL, HH) and processes them with specialised sub-networks:
 
 - **LL Encoder**: CNN + Sobel gradient features for low-frequency structural content
 - **Mid-Frequency Transformer**: Cross-attention Restormer blocks for LH/HL detail bands, guided by LL features
@@ -16,7 +16,7 @@ The sub-band outputs are recombined via inverse SWT, followed by a lightweight r
 ## Project Structure
 
 ```
-Restormer-SWT/
+PraFormer/
 ├── model/
 │   ├── full_model.py        # HierarchicalRestormer (main model)
 │   ├── ll_encoder.py        # LL sub-band encoder
@@ -37,8 +37,8 @@ Restormer-SWT/
 ## Installation
 
 ```bash
-git clone https://github.com/MRI-Brain-Synthesis/Restormer-SWT.git
-cd Restormer-SWT
+git clone https://github.com/MRI-Brain-Synthesis/PraFormer.git
+cd PraFormer
 pip install -r requirements.txt
 ```
 

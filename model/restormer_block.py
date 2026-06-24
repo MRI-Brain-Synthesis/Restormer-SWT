@@ -87,3 +87,4 @@ class CrossRestormerBlock(nn.Module):
         norm_x = self.norm2(x.flatten(2).transpose(1, 2)).transpose(1, 2).view(b, c, h, w)
         x = x + self.ffn(norm_x)
         return x
+

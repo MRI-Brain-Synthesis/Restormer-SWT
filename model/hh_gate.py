@@ -58,3 +58,4 @@ class EdgeEnhancedHHGate(nn.Module):
 
 
         return hh_gated + self.refine(hh_gated)
+
